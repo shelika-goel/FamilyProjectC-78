@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://cdn1.byjus.com/wp-content/uploads/2019/09/my-family-essay-for-class-1.jpeg" style="width: 450; height:450;" id="family_member_image">
+            <h4 id="family_member_name"></h4>
+            <button onclick="update();">Next</button>
+        </center>
+        <script>
+            var images = ["https://cdn1.byjus.com/wp-content/uploads/2019/09/my-family-essay-for-class-1.jpeg",
+            "https://t3.ftcdn.net/jpg/02/62/72/10/360_F_262721041_9mNNRQadoz552DN2NTFNbGBHN14K9D58.jpg",
+             "https://i.pinimg.com/originals/db/f5/08/dbf508e27715f8ed3730bec349092789.jpg" , 
+             "https://www.pngfind.com/pngs/m/159-1594870_download-father-and-daughter-png-clipart-father-clip.png",
+              "https://media.istockphoto.com/vectors/happy-cute-little-kid-boy-read-book-with-mom-vector-id1206132788?k=6&m=1206132788&s=612x612&w=0&h=h-8DWQ23RJ9s5DJFo_6B1sSFayckAOGq_U3Tp7Jjg34=",
+               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdDOpGCNsWF8LYqljwTMuNQhixDaxeOj7kxg&usqp=CAU",
+            "https://thumbs.dreamstime.com/b/sister-portrait-pretty-teenage-girl-schoolgirl-long-brown-hair-satchel-bag-school-uniform-skirt-blouse-daughter-86364433.jpg",
+            "https://www.clipartkey.com/mpngs/m/9-94021_clipart-woman-transparent-background-teacher-clipart.png"];
+            var names = ["Family Pics",
+            "Grand Father",
+             "Grand Mother",
+             "Father",
+             "Mother",
+              "Brother",
+               "Sister",
+               "My Pic"];
+            var i = 0;
+            function update()
+            {
+                i++;
+                var family_member = 7;
+                if(i > family_member)
+                {
+                    i = 0;
+                }
+                var newImage = images[i];
+                var newName  = names[i];
+                document.getElementById("family_member_image").src = newImage;
+                document.getElementById("family_member_name").innerHTML = newName;
+            }
+
+        </script>
+    </body>
+</html>
